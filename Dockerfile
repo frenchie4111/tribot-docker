@@ -33,8 +33,12 @@ RUN \
 # Set WORKDIR
 WORKDIR "/root"
 
+COPY "startup.sh" "/root/"
+
 # Download tribot
 RUN wget https://tribot.org/bin/TRiBot_Loader.jar
+
+ENTRYPOINT "/root/startup.sh"
 
 # Expose ports.
 EXPOSE 5901
