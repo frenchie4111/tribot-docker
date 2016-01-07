@@ -28,7 +28,7 @@ RUN \
 # Install TRiBot dependencies
 RUN \
 	apt-get update && \
-	apt-get install libxslt1.1
+	apt-get install -y libxslt1.1
 
 # Set WORKDIR
 WORKDIR "/root"
