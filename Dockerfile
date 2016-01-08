@@ -30,6 +30,9 @@ RUN \
 	apt-get update && \
 	apt-get install -y libxslt1.1
 
+# Set user
+ENV USER root
+
 # Set WORKDIR
 WORKDIR "/root"
 
